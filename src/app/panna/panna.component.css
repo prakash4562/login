@@ -1,0 +1,23 @@
+.block {
+  margin: 20px
+}
+.row img {
+  width: 70px;
+  z-index: 1;
+}
+
+.text {
+  background-color: #FFFFFF;
+  height: 209px;
+  width: 186px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.text1 {
+  margin-top: 70px;
+}
+
+.text2 {
+  font-size: 40px
+}

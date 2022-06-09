@@ -1,0 +1,19 @@
+.first {
+  width: 15px;
+  height: 70px;
+  background-color: #690f0f4a;
+  color: #690f0f4a;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.second {
+  width: 250px;
+  height: 70px;
+  background-color: #FFFFFF;
+  border-radius: 0px 10px 10px 0px;
+}
+
+/*.row h5{*/
+/*  ont-size: 25px;*/
+/*  font-weight: bold;*/
+/*}*/
