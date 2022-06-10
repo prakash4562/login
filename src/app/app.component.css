@@ -27,3 +27,12 @@
   font-size: 13px;
   margin-right: 10px;
 }
+:host ::ng-deep .mat-form-field-outline{
+  background-color: rgba(71, 25, 25, 0.06);
+}
+:host ::ng-deep .mat-select-arrow {
+  color: orangered;
+}
+
+
+
