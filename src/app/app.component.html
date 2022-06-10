@@ -1,6 +1,29 @@
 <div class="container">
-<app-booth></app-booth>
-<app-panna></app-panna>
-<app-key-voters></app-key-voters>
+  <div>
+    <div class="d-flex">
+      <div><img src="../assets/photos/speedometer.png" style="height: 30px"></div>
+      <div class="performance">Performance Report</div>
+    </div>
+    <div class="d-flex mx-lg-5 ">
+      <p class="performance-text">Performance Report</p>
+      <p class="performance-text"><i class="fa fa-angle-right"></i></p>
+      <p class="performance-text" style="color: orange">Booth Vistarak</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-3">
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Select Date Range</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+  </div>
+  <app-performance-report></app-performance-report>
+  <app-booth></app-booth>
+  <app-panna></app-panna>
+  <app-key-voters></app-key-voters>
   <app-total-data></app-total-data>
 </div>
+

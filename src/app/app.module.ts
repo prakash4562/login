@@ -9,6 +9,7 @@ import { BoothComponent } from './booth/booth.component';
 import { PannaComponent } from './panna/panna.component';
 import { KeyVotersComponent } from './key-voters/key-voters.component';
 import { TotalDataComponent } from './total-data/total-data.component';
+import { PerformanceReportComponent } from './performance-report/performance-report.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { TotalDataComponent } from './total-data/total-data.component';
     PannaComponent,
     KeyVotersComponent,
     TotalDataComponent,
+    PerformanceReportComponent,
   ],
   imports: [
     BrowserModule,
