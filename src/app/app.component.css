@@ -34,5 +34,12 @@
   color: orangered;
 }
 
+/*:host ::ng-deep .mat-ink-bar {*/
+/*  visibility: hidden;*/
+/*}*/
+
+:host ::ng-deep .mat-tab-list .mat-ink-bar {
+  visibility: hidden;
+}
 
 
