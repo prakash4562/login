@@ -1,5 +1,22 @@
-.divChart {
-  display: block;
-  height: 200px;
-  width: 100px;
+.barChart {
+  height: 300px;
+  width: 400px;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.doughnutChart {
+  height: 600px;
+  width: 400px;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.text-font {
+  font-size: 25px;
+  font-weight: bold;
 }
