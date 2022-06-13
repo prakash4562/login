@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ChartModule } from 'angular-highcharts'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,7 +35,8 @@ import {MatTabsModule} from "@angular/material/tabs";
     MatSliderModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatTabsModule
+    MatTabsModule,
+    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
