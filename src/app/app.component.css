@@ -41,5 +41,13 @@
 :host ::ng-deep .mat-tab-list .mat-ink-bar {
   visibility: hidden;
 }
+.mat-label-color .mat-form-field-flex .mat-form-field-infix .mat-form-field-label {
+color: #690f0f !important;
+}
+.mat-form-field-empty.mat-form-field-label, .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  color: red!important;
+}
 
-
+:host ::ng-deep .mat-form-field-label {
+  color: red;
+}
