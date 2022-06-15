@@ -578,7 +578,7 @@ export class PerformanceReportComponent implements OnInit {
   makeDoughnutChart1() {
     this.chart = {
       type: 'solidgauge',
-      height: '110%',
+      height: '90%',
     },
 
       this.title = {
@@ -595,8 +595,8 @@ export class PerformanceReportComponent implements OnInit {
         style: {
           fontSize: '16px'
         },
-        valueSuffix: '%',
-        pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
+        // valueSuffix: '%',
+        // pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
         positioner: function (labelWidth) {
           return {
             x: (this.chart.chartWidth - labelWidth) / 2,
@@ -616,7 +616,7 @@ export class PerformanceReportComponent implements OnInit {
         }, { // Track for Exercise
           outerRadius: '80%',
           innerRadius: '65%',
-          backgroundColor: 'blue',
+          backgroundColor: 'lightgrey',
           borderWidth: 0
         }]
       },
@@ -653,7 +653,7 @@ export class PerformanceReportComponent implements OnInit {
           color: 'blue',
           radius: '80%',
           innerRadius: '65%',
-          y: 100
+          y: 70
         }]
       }]
     Highcharts.chart('donutChart1', {
@@ -670,7 +670,7 @@ export class PerformanceReportComponent implements OnInit {
   makeDoughnutChart2() {
     this.chart = {
       type: 'solidgauge',
-      height: '50%',
+      height: '80%',
     },
 
       this.title = {
@@ -687,8 +687,8 @@ export class PerformanceReportComponent implements OnInit {
         style: {
           fontSize: '16px'
         },
-        valueSuffix: '%',
-        pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
+        // valueSuffix: '%',
+        // pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
         positioner: function (labelWidth) {
           return {
             x: (this.chart.chartWidth - labelWidth) / 2,
@@ -708,7 +708,7 @@ export class PerformanceReportComponent implements OnInit {
         }, { // Track for Exercise
           outerRadius: '80%',
           innerRadius: '65%',
-          backgroundColor: 'blue',
+          backgroundColor: 'lightgrey',
           borderWidth: 0
         }]
       },
@@ -745,7 +745,7 @@ export class PerformanceReportComponent implements OnInit {
           color: 'blue',
           radius: '80%',
           innerRadius: '65%',
-          y: 100
+          y: 70
         }]
       }]
     Highcharts.chart('donutChart2', {
