@@ -49,14 +49,14 @@ export class PerformanceReportComponent implements OnInit {
   public basicBarOptions: any = {
     chart: {
       type: 'bar',
-      height: '30%'
+      height: '300px'
 
     },
     title: {
-      text: 'Historic World Population by Region'
+      text: ''
     },
     subtitle: {
-      text: 'Wikipedia'
+      text: ''
     },
     xAxis: {
       categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
@@ -121,15 +121,16 @@ export class PerformanceReportComponent implements OnInit {
 
   makeColumnChart() {
     this.chart = {
-      type: 'column'
+      type: 'column',
+      height: '300px'
     },
       this.title = {
         align: 'left',
-        text: 'Browser market shares. January, 2018'
+        text: ''
       },
       this.subtitle = {
         align: 'left',
-        text: 'Share Market'
+        text: ''
       },
       this.accessibility = {
         announceNewData: {
@@ -164,40 +165,40 @@ export class PerformanceReportComponent implements OnInit {
       this.series = [
         {
           name: "Browsers",
-          colorByPoint: true,
+          color: 'orange',
           data: [
             {
-              name: "Chrome",
+              name: this.currentDate_6 + "/" + this.month,
               y: 50,
               drilldown: "Chrome"
             },
             {
-              name: "Firefox",
+              name: this.currentDate_5 + "/" + this.month,
               y: 20.57,
               drilldown: "Firefox"
             },
             {
-              name: "Internet Explorer",
+              name: this.currentDate_4 + "/" + this.month,
               y: 47.23,
               drilldown: "Internet Explorer"
             },
             {
-              name: "Safari",
+              name: this.currentDate_3 + "/" + this.month,
               y: 25.58,
               drilldown: "Safari"
             },
             {
-              name: "Edge",
+              name: this.currentDate_2 + "/" + this.month,
               y: 14.02,
               drilldown: "Edge"
             },
             {
-              name: "Opera",
+              name: this.currentDate_1 + "/" + this.month,
               y: 51.92,
               drilldown: "Opera"
             },
             {
-              name: "Other",
+              name: "Today",
               y: 37.62,
               drilldown: null
             }
@@ -429,7 +430,7 @@ export class PerformanceReportComponent implements OnInit {
           }
         ]
       }
-    Highcharts.chart('pieChart', {
+    Highcharts.chart('columnChart', {
       chart: this.chart,
       title: this.title,
       subtitle: this.subtitle,
@@ -447,13 +448,13 @@ export class PerformanceReportComponent implements OnInit {
   makeAreaChart() {
     this.chart = {
       type: 'area',
-      height: '60%'
+      height: '300px',
     },
       this.accessibility = {
         description: 'Image description: An area chart compares the nuclear stockpiles of the USA and the USSR/Russia between 1945 and 2017. The number of nuclear weapons is plotted on the Y-axis and the years on the X-axis. The chart is interactive, and the year-on-year stockpile levels can be traced for each country. The US has a stockpile of 6 nuclear weapons at the dawn of the nuclear age in 1945. This number has gradually increased to 369 by 1950 when the USSR enters the arms race with 6 weapons. At this point, the US starts to rapidly build its stockpile culminating in 32,040 warheads by 1966 compared to the USSR’s 7,089. From this peak in 1966, the US stockpile gradually decreases as the USSR’s stockpile expands. By 1978 the USSR has closed the nuclear gap at 25,393. The USSR stockpile continues to grow until it reaches a peak of 45,000 in 1986 compared to the US arsenal of 24,401. From 1986, the nuclear stockpiles of both countries start to fall. By 2000, the numbers have fallen to 10,577 and 21,000 for the US and Russia, respectively. The decreases continue until 2017 at which point the US holds 4,018 weapons compared to Russia’s 4,500.'
       },
       this.title = {
-        text: 'US nuclear stockpiles'
+        text: ''
       },
       this.xAxis = {
         allowDecimals: false,
@@ -496,6 +497,8 @@ export class PerformanceReportComponent implements OnInit {
       },
       this.series = [{
         name: 'USA',
+        color: 'orange',
+        opacity: '0.5',
         data: [
           null, null, null, null, null, 6, 11, 32, 110, 235,
           369, 640, 1005, 1436, 2063, 3057, 4618, 6444, 9822, 15468,
