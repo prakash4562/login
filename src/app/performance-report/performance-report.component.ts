@@ -35,6 +35,17 @@ export class PerformanceReportComponent implements OnInit {
   plotHeight;
   credits;
 
+  dateObj = new Date()
+  currentDate = this.dateObj.getDate()
+  currentDate_1 = this.currentDate-1
+  currentDate_2 = this.currentDate-2
+  currentDate_3 = this.currentDate-3
+  currentDate_4 = this.currentDate-4
+  currentDate_5 = this.currentDate-5
+  currentDate_6 = this.currentDate-6
+  month = this.dateObj.getMonth()+1
+  year = this.dateObj.getFullYear()
+
   public basicBarOptions: any = {
     chart: {
       type: 'bar',

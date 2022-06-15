@@ -10,53 +10,12 @@
       <p class="performance-text" style="color: orange">Booth Vistarak</p>
     </div>
   </div>
-  <div>
-    <mat-tab-group mat-align-tabs="start">
-      <mat-tab label="Mandal Adhyaksh">Content 1</mat-tab>
-      <mat-tab label="Booth Vistarak">Content 2</mat-tab>
-      <mat-tab label="Booth Samiti Adhyaksh">Content 3</mat-tab>
-    </mat-tab-group>
-  </div>
+  <app-angular-tab></app-angular-tab>
   <app-performance-report></app-performance-report>
-
-  <div class="d-flex p-0" style="background-color: #FFFFFF; border-radius: 20px">
-    <form class="m-5">
-      <mat-form-field appearance="outline" class="mat-label-color">
-        <mat-label>Select Date Range</mat-label>
-        <mat-select>
-          <mat-option>Zila-1</mat-option>
-          <mat-option>Zila-2</mat-option>
-          <mat-option>Zila-3</mat-option>
-          <mat-option>Zila-4</mat-option>
-        </mat-select>
-      </mat-form-field>
-    </form>
-    <form class="m-5">
-      <mat-form-field appearance="outline">
-        <mat-label>Select Zila</mat-label>
-        <mat-select>
-          <mat-option>Zila-1</mat-option>
-          <mat-option>Zila-2</mat-option>
-          <mat-option>Zila-3</mat-option>
-          <mat-option>Zila-4</mat-option>
-        </mat-select>
-      </mat-form-field>
-    </form>
-    <form class="m-5">
-      <mat-form-field appearance="outline">
-        <mat-label>Select Vidhan Sabha</mat-label>
-        <mat-select>
-          <mat-option>Zila-1</mat-option>
-          <mat-option>Zila-2</mat-option>
-          <mat-option>Zila-3</mat-option>
-          <mat-option>Zila-4</mat-option>
-        </mat-select>
-      </mat-form-field>
-    </form>
-  </div>
-
+  <app-angular-form></app-angular-form>
   <app-booth></app-booth>
   <app-panna></app-panna>
   <app-key-voters></app-key-voters>
   <app-total-data></app-total-data>
 </div>
+

@@ -16,6 +16,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatSelectModule} from "@angular/material/select";
 import {MatTabsModule} from "@angular/material/tabs";
+import { AngularFormComponent } from './angular-form/angular-form.component';
+import { AngularTabComponent } from './angular-tab/angular-tab.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import {MatTabsModule} from "@angular/material/tabs";
     KeyVotersComponent,
     TotalDataComponent,
     PerformanceReportComponent,
+    AngularFormComponent,
+    AngularTabComponent,
   ],
   imports: [
     BrowserModule,
