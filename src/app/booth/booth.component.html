@@ -5,40 +5,12 @@
   </div>
 
   <div class="booth-container">
-    <div class="panna">
+    <div class="panna" *ngFor="let booth of booths">
       <div class="panna-item">
-        <img src='../../assets/photos/booth/total-booths.svg' class="img">
+        <img src='{{ booth.image }}' class="img">
       </div>
-      <div class="panna-item" style="font-weight: bolder; color: #0000007a;">Total Booth</div>
-      <div class="panna-item" style="font-size: 25px; font-weight: bold;">20</div>
-    </div>
-    <div class="panna">
-      <div class="panna-item">
-        <img src='../../assets/photos/booth/booth-assigned.svg' class="img">
-      </div>
-      <div class="panna-item" style="font-weight: bolder; color: #0000007a;">Booth Assigned</div>
-      <div class="panna-item" style="font-size: 25px; font-weight: bold;">12</div>
-    </div>
-    <div class="panna">
-      <div class="panna-item">
-        <img src='../../assets/photos/booth/booth-president-appointed.svg' class="img">
-      </div>
-      <div class="panna-item" style="font-weight: bolder; color: #0000007a;">Booth President Appointed</div>
-      <div class="panna-item" style="font-size: 25px; font-weight: bold;">14</div>
-    </div>
-    <div class="panna">
-      <div class="panna-item">
-        <img src='../../assets/photos/booth/general-secretary.svg' class="img">
-      </div>
-      <div class="panna-item" style="font-weight: bolder; color: #0000007a;">General Secretary</div>
-      <div class="panna-item" style="font-size: 25px; font-weight: bold;">14</div>
-    </div>
-    <div class="panna">
-      <div class="panna-item">
-        <img src='../../assets/photos/booth/bla.svg' class="img">
-      </div>
-      <div class="panna-item" style="font-weight: bolder; color: #0000007a;">BLA</div>
-      <div class="panna-item" style="font-size: 25px; font-weight: bold;">06</div>
+      <div class="panna-item" style="font-weight: bolder; color: #0000007a;">{{ booth.text }}</div>
+      <div class="panna-item" style="font-size: 25px; font-weight: bold;">{{ booth.count }}</div>
     </div>
   </div>
 

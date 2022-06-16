@@ -5,33 +5,12 @@
   </div>
 
   <div class="panna-container">
-    <div class="panna">
+    <div class="panna" *ngFor="let panna of pannas">
       <div class="panna-item">
-        <img src='../../assets/photos/panna/panna%20samiti.svg' class="img">
+        <img src='{{ panna.image }}' class="img">
       </div>
-      <div class="panna-item" style="font-weight: bolder; color: #0000007a;">Total Panna</div>
-      <div class="panna-item" style="font-size: 25px; font-weight: bold;">20</div>
-    </div>
-    <div class="panna">
-      <div class="panna-item">
-        <img src='../../assets/photos/panna/panna%20samiti.svg' class="img">
-      </div>
-      <div class="panna-item" style="font-weight: bolder; color: #0000007a;">Panna with Vistarak</div>
-      <div class="panna-item" style="font-size: 25px; font-weight: bold;">12</div>
-    </div>
-    <div class="panna">
-      <div class="panna-item">
-        <img src='../../assets/photos/panna/panna%20samiti.svg' class="img">
-      </div>
-      <div class="panna-item" style="font-weight: bolder; color: #0000007a;">Panna Pramukh</div>
-      <div class="panna-item" style="font-size: 25px; font-weight: bold;">14</div>
-    </div>
-    <div class="panna">
-      <div class="panna-item">
-        <img src='../../assets/photos/panna/panna%20samiti.svg' class="img">
-      </div>
-      <div class="panna-item" style="font-weight: bolder; color: #0000007a;">Panna Samiti</div>
-      <div class="panna-item" style="font-size: 25px; font-weight: bold;">14</div>
+      <div class="panna-item" style="font-weight: bolder; color: #0000007a;">{{ panna.text }}</div>
+      <div class="panna-item" style="font-size: 25px; font-weight: bold;">{{ panna.count }}</div>
     </div>
   </div>
 </div>

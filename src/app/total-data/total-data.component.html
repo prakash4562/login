@@ -25,107 +25,22 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
-      <td>1.</td>
-      <td>Yatin</td>
-      <td>8888800000</td>
-      <td>Morena</td>
-      <td>Joura</td>
-      <td>253; 252; 29</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>21</td>
-      <td>21</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>2.</td>
-      <td>Yatin</td>
-      <td>8888800000</td>
-      <td>Morena</td>
-      <td>Joura</td>
-      <td>253; 252; 29</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>21</td>
-      <td>21</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>3.</td>
-      <td>Yatin</td>
-      <td>8888800000</td>
-      <td>Morena</td>
-      <td>Joura</td>
-      <td>253; 252; 29</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>21</td>
-      <td>21</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>4.</td>
-      <td>Yatin</td>
-      <td>8888800000</td>
-      <td>Morena</td>
-      <td>Joura</td>
-      <td>253; 252; 29</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>21</td>
-      <td>21</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>5.</td>
-      <td>Yatin</td>
-      <td>8888800000</td>
-      <td>Morena</td>
-      <td>Joura</td>
-      <td>253; 252; 29</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>21</td>
-      <td>21</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr >
-      <td>6.</td>
-      <td>Yatin</td>
-      <td>8888800000</td>
-      <td>Morena</td>
-      <td>Joura</td>
-      <td>253; 252; 29</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>21</td>
-      <td>21</td>
-      <td>1</td>
-      <td>1</td>
+    <tr *ngFor="let table of total_data">
+      <td>{{ table.count }}</td>
+      <td>{{ table.name }}</td>
+      <td>{{ table.mobile }}</td>
+      <td>{{ table.zila }}</td>
+      <td>{{ table.ac_name }}</td>
+      <td>{{ table.mandal}}</td>
+      <td>{{ table.assigned_booth }}</td>
+      <td>{{ table.booth_president }}</td>
+      <td>{{ table.general_secretary }}</td>
+      <td>{{ table.bla }}</td>
+      <td>{{ table.member }}</td>
+      <td>{{table.total_panna }}</td>
+      <td>{{ table.panna_samiti_member }}</td>
+      <td>{{ table.panna_pramukh }}</td>
+      <td>{{ table.key_voter }}</td>
     </tr>
     </tbody>
   </table>
