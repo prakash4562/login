@@ -48,18 +48,18 @@
   </div>
   <div class="grid-2 d-grid">
     <div class="d-grid" style="grid-template-columns: 450px auto; gap: 15px">
-      <div class="highcharts-figure shadow p-3" style="height: 400px">
+      <div class="highcharts-figure shadow p-3 areaChartGrid" style="height: 400px">
         <div class="row">
-          <p class="col-8 text-font">07</p>
+          <p class="col-6 text-font">07</p>
           <button class="col-2 btn btn-outline-primary button" type="button" (click)="selectChart()">Chart</button>
           <button class="col-2 btn btn-outline-primary button" type="button" (click)="convertToTable()">Table</button>
           <p class="text-style">Active Vistarak</p>
         </div>
         <div id="areaChart"></div>
       </div>
-      <div class="highcharts-figure shadow p-3" style="height: 400px">
+      <div class="highcharts-figure shadow p-3 columnChartGrid" style="height: 400px">
         <div class="row">
-          <p class="col-8 text-font">07</p>
+          <p class="col-6 text-font">07</p>
           <button class="col-2 btn btn-outline-primary button" (click)="convertToChart()">Chart</button>
           <button class="col-2 btn btn-outline-primary button" (click)="selectTable()">Table</button>
         </div>
@@ -67,19 +67,11 @@
         <div id="columnChart" style="border-radius: 20px;"></div>
       </div>
     </div>
-    <div class="highcharts-figure shadow p-3">
-      <div class="row">
-        <p class="col-6 text-font">07</p>
-        <p class="col-2">Chart</p>
-        <p class="col-2">Table</p>
-      </div>
-      <p class="text-style">Vistarak with no Data Entry</p>
+    <div class="highcharts-figure shadow p-3 basicChartGrid">
+      <p class="text-style" style="margin: 10px 0">Vistarak with no Data Entry</p>
       <div id="basicBar"></div>
     </div>
   </div>
 </div>
 
-<!--<div id="container" style="width: 500px; height: 500px">-->
-
-<!--</div>-->
 

@@ -626,7 +626,7 @@ export class PerformanceReportComponent implements OnInit {
     },
 
       this.title = {
-        text: 'Activity',
+        text: '',
         style: {
           fontSize: '24px'
         }
@@ -718,7 +718,7 @@ export class PerformanceReportComponent implements OnInit {
     },
 
       this.title = {
-        text: 'Activity',
+        text: '',
         style: {
           fontSize: '24px'
         }
