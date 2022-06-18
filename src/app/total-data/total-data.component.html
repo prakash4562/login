@@ -1,3 +1,28 @@
+<div id="table-form" *ngIf="flag" class="table-form">
+  <form class="row">
+    <div class="col-6">
+    <div class="form-group" style="margin: 10px 0">
+      Name: <input type="text" class="form-control" id="name" aria-describedby="emailHelp" value="" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+      Mobile No.: <input type="text" class="form-control" id="mobile" aria-describedby="emailHelp" value="" placeholder="Enter mobile number">
+    </div>
+    </div>
+
+    <div class="col-6">
+    <div class="form-group" style="margin: 10px 0">
+      Zila: <input type="text" class="form-control" id="zila" aria-describedby="emailHelp" value="" placeholder="Enter zila name">
+    </div>
+    <div class="form-group">
+      AC_Name : <input type="text" class="form-control" id="ac_name" aria-describedby="emailHelp" value="" placeholder="Enter ac name">
+    </div>
+    </div>
+
+    <div class="d-flex justify-content-center mt-5"><button type="submit" class="btn btn-primary" (click)="updateData()">Update</button></div>
+  </form>
+</div>
+
+
 <div class="m-5">
   <span class="shadow"
         style="background-color:  #FFFFFF;  color: rgba(0,0,0,0.45); font-weight: bolder; padding: 15px 50px; border-radius: 10px">Total Data - 5</span>
@@ -21,7 +46,8 @@
       <th>Total Panna</th>
       <th>Panna Samiti Member</th>
       <th>Panna Pramukh</th>
-      <th style="border-top-right-radius: 20px">Key Voter</th>
+      <th>Key Voter</th>
+      <th style="border-top-right-radius: 20px">Actions</th>
     </tr>
     </thead>
     <tbody>
@@ -41,6 +67,12 @@
       <td>{{ table.panna_samiti_member }}</td>
       <td>{{ table.panna_pramukh }}</td>
       <td>{{ table.key_voter }}</td>
+      <td>
+        <div class="d-flex">
+          <button class="btn btn-primary" style="margin: 0 5px" (click)="editData(this.table.count)">Edit</button>
+          <button class="btn btn-danger" (click)="deleteData(this.table.count)">Delete</button>
+        </div>
+      </td>
     </tr>
     </tbody>
   </table>

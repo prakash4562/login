@@ -1,167 +1,53 @@
-/*.bg{*/
-/*  height: 100vh;*/
-/*  background-color: #ffb6c13b;*/
-/*}*/
+.bg{
+  height: 100vh;
+  background-color: #ffb6c13b;
+}
 
-/*.edge{*/
-/*  border: 2px solid black;*/
-/*  padding: 5px 10px;*/
-/*  background-color: rgb(255, 255, 255);*/
-/*  border-radius: 20px;*/
-/*  margin-right: 50px;*/
-/*}*/
-/*.select {*/
-/*  background-color: #FFF;*/
-/*  padding: 30px 50px;*/
-/*  border-radius: 30px;*/
-/*}*/
+.edge{
+  border: 2px solid black;
+  padding: 5px 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin-right: 50px;
+}
+.select {
+  background-color: #FFF;
+  padding: 30px 50px;
+  border-radius: 30px;
+}
 
-/*.performance {*/
-/*  font-size: 20px;*/
-/*  font-weight: bold;*/
-/*  color: #a52a2ae8;*/
-/*  margin-left: 20px;*/
-/*}*/
+.performance {
+  font-size: 20px;
+  font-weight: bold;
+  color: #a52a2ae8;
+  margin-left: 20px;
+}
 
-/*.performance-text {*/
-/*  font-size: 13px;*/
-/*  margin-right: 10px;*/
-/*}*/
-/*:host ::ng-deep .mat-form-field-outline{*/
-/*  background-color: rgba(71, 25, 25, 0.06);*/
-/*}*/
-/*:host ::ng-deep .mat-select-arrow {*/
-/*  color: orangered;*/
-/*}*/
+.performance-text {
+  font-size: 13px;
+  margin-right: 10px;
+}
+:host ::ng-deep .mat-form-field-outline{
+  background-color: rgba(71, 25, 25, 0.06);
+}
+:host ::ng-deep .mat-select-arrow {
+  color: orangered;
+}
 
-/*!*:host ::ng-deep .mat-ink-bar {*!*/
-/*!*  visibility: hidden;*!*/
-/*!*}*!*/
-
-/*:host ::ng-deep .mat-tab-list .mat-ink-bar {*/
+/*:host ::ng-deep .mat-ink-bar {*/
 /*  visibility: hidden;*/
 /*}*/
-/*.mat-label-color .mat-form-field-flex .mat-form-field-infix .mat-form-field-label {*/
-/*color: #690f0f !important;*/
-/*}*/
-/*.mat-form-field-empty.mat-form-field-label, .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {*/
-/*  color: red!important;*/
-/*}*/
 
-/*:host ::ng-deep .mat-form-field-label {*/
-/*  color: red;*/
-/*}*/
-
-/*.flex-container {*/
-/*  display: flex;*/
-/*  height: 200px;*/
-/*  flex-wrap: wrap;*/
-/*  overflow: scroll;*/
-/*  background-color: DodgerBlue;*/
-/*}*/
-
-/*.flex-container > div {*/
-/*  background-color: #f1f1f1;*/
-/*  width: 100px;*/
-/*  margin: 10px;*/
-/*  text-align: center;*/
-/*  line-height: 75px;*/
-/*  font-size: 30px;*/
-/*}*/
-
-
-* {
-  box-sizing: border-box;
+:host ::ng-deep .mat-tab-list .mat-ink-bar {
+  visibility: hidden;
+}
+.mat-label-color .mat-form-field-flex .mat-form-field-infix .mat-form-field-label {
+color: #690f0f !important;
+}
+.mat-form-field-empty.mat-form-field-label, .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  color: red!important;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-html {
-  font-family: "Lucida Sans", sans-serif;
-}
-
-.header {
-  background-color: #9933cc;
-  color: #ffffff;
-  padding: 15px;
-}
-
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  padding: 8px;
-  margin-bottom: 7px;
-  background-color: #33b5e5;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.menu li:hover {
-  background-color: #0099cc;
-}
-
-.aside {
-  background-color: #33b5e5;
-  padding: 15px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.footer {
-  background-color: #0099cc;
-  color: #ffffff;
-  text-align: center;
-  font-size: 12px;
-  padding: 15px;
-}
-
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+:host ::ng-deep .mat-form-field-label {
+  color: red;
 }
