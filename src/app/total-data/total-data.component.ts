@@ -74,9 +74,10 @@ export class TotalDataComponent implements OnInit {
     this.total_data[objIndex].ac_name = ac_name
   }
 
-  deleteData(count) {
+  deleteData(number) {
     alert("Are you want to delete?")
-    this.total_data.splice(count-1, 1)
+    let objIndex = this.total_data.findIndex((obj => obj.count == number));
+    this.total_data.splice(objIndex, 1)
   }
 
 }
